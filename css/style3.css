@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.mainheader {
+    position: relative;
+    padding: 30px 0px;
+    width: 100%;
+    background: url(../images/header_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mainlogo {
+    text-align: center;
+}
+
+.twitter {
+    position: absolute;
+    right: 90px;
+    top: 20px;
+    list-style: none;
+}
+
+.facebook {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    list-style: none;
+}
+
+nav {
+    background: #69290c;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    width: 240px;
+    text-align: center;
+    color: #f7f7f7;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+nav ul li a:link {
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #863511;
+}
+
+nav ul li a {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.suboutheader {
+    background: #fff6e8;
+}
+
+.subinheader {
+    margin: 40px auto 100px;
+    width: 1200px;
+    background: url(../images/about_event.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 280px;
+}
+
+.event {
+    width: 540px;
+    padding: 80px 0px 40px;
+    font-size: 31px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.subheadertext {
+    width: 540px;
+}
+
+
+.kizizentaiarticle {
+    margin: 0px auto 40px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #aaa 2px;
+    padding-bottom: 40px;
+    padding-top: 55px;
+    margin-top: -55px;
+}
+
+.kizizentaiarticle:last-child {
+    border-bottom: none;
+}
+
+.kizizentaiarticle header {
+    width: 200px;
+}
+
+.kizizentaiarticle ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.kizizentaiarticle ul li {
+    margin: 40px 35px 0px 0px;
+}
+
+.kizisection {
+    width: 900px;
+}
+
+.kizisection h2 {
+    font-size: 24px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: normal;
+}
+
+.kizisection p,
+.kizisection figure {
+    margin-top: 40px
+}
+
+footer {
+    background: #69290c;
+}
+
+footer p {
+    text-align: center;
+    color: #f7f7f7;
+    padding: 20px 0px;
+    width: 1200px;
+    margin: 0 auto;
+}
