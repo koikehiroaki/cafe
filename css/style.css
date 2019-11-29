@@ -143,16 +143,40 @@ nav ul li a {
     width: 1200px;
 }
 
+.inner_about {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.aboutsection figure {
+    float: left;
+
+    
+}
+
+.about_catch {
+    float: right;
+    width: 600px;
+    margin: 1.5em 0 2em;
+    text-align: center;
+    font-size: 30px;
+    color: #69290c;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.aboutp {
+    float: right;
+    width: 600px;
+    line-height: 2;
+}
+
 .about {
     text-align: center;
     margin: 100px 0px 40px;
     font-size: 60px;
     font-family: 'Noto Serif JP', serif;
     font-weight: lighter;
-}
-
-.aboutp {
-    margin: 40px 0px;
 }
 
 .botan {
@@ -278,19 +302,16 @@ nav ul li a {
 
 .menuoutimg {
     list-style: none;
-    position: relative;
-    height: 500px;
+    display: flex;
+    justify-content:space-between;
 }
 
 .menuimg1 {
-    position: absolute;
-    left: 0px;
+
 }
 
 .menuimg2 {
-    position: absolute;
-    right: 0px;
-    top: 200px;
+
 }
 
 .menup {
