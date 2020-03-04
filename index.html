@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
-
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
 </head>
-
 <body>
     <header class="mainheader">
 
@@ -35,6 +34,11 @@
             </li>
         </ul>
     </header>
+    <p class="btn-gnavi">
+        <span></span>
+        <span></span>
+        <span></span>
+    </p>
     <nav>
         <ul>
             <li>
@@ -95,10 +99,12 @@
             <h2 class="about">About</h2>
             <div class="inner_about">
                 <figure>
-                    <img src="images/0011.png" alt="aboutimage">
+                    <img src="images/0011_2.png" alt="aboutimage">
                 </figure>
-                <p class="about_catch">憩いの時間を作る</p>
-                <p class="aboutp">私たちは素敵な空間、美味しい食事、それに質の高いサービスをし、誰でも気軽に立ち寄れるカフェを目指しています。内装は木材を基調とし、落ち着いた空間となっており、主な食材は国産にこだわっております。私たち従業員はお客様に、cafe・ド・リシャスでのお食事が楽しいと思えるよう、努力してまいります。お客様のご来店を心よりお待ちしております。</p>
+                <div class="about_text">
+                    <p class="about_catch">憩いの時間を作る</p>
+                    <p class="aboutp">私たちは素敵な空間、美味しい食事、それに質の高いサービスをし、誰でも気軽に立ち寄れるカフェを目指しています。内装は木材を基調とし、落ち着いた空間となっており、主な食材は国産にこだわっております。私たち従業員はお客様に、cafe・ド・リシャスでのお食事が楽しいと思えるよう、努力してまいります。お客様のご来店を心よりお待ちしております。</p>
+                </div>
             </div>
             <p class="botan">
                 <a href="about.html">read more</a>
@@ -152,6 +158,7 @@
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/common.js"></script>
     <script>
         $(function() {
             $('.bxslider').bxSlider({

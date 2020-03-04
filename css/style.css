@@ -12,11 +12,27 @@ body {
     background: url(../images/header_img.png);
     background-size: cover;
     background-repeat: no-repeat;
+    
+}
+
+@media screen and (max-width: 768px) {
+.mainheader {
+    padding: 15px 0px;
+}
 }
 
 .mainlogo {
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/
+    width: 15%;
+    margin: 0 auto;
+    /*padding: 25px 0;*/
+}
+
+.mainlogo img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .logo_haikei {
@@ -27,20 +43,84 @@ body {
     border-radius: 100px;
 }
 
+header ul {
+    /*position: relative;*/
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    
+}
+
+.twitter img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.facebook img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 769px) {
 .twitter {
     position: absolute;
-    right: 90px;
-    top: 20px;
+    right: 35px;
+    top: 25px;
     list-style: none;
+    
 }
 
 .facebook {
     position: absolute;
-    right: 30px;
-    top: 20px;
+    right: 100px;
+    top: 25px;
     list-style: none;
 }
+}
 
+@media screen and (min-width:600px) and (max-width:768px) {
+.twitter {
+    width: 5%;
+    /*position: absolute;
+    right: 10px;
+    top: 75px;*/
+    list-style: none;
+    margin-right: 10px;
+}
+
+.facebook {
+    width: 5%;
+    /*position: absolute;
+    right: 70px;
+    top: 75px;*/
+    list-style: none;
+    margin-right: 10px;
+}
+}
+
+@media screen and (max-width: 599px) {
+.twitter {
+    width: 7%;
+    /*position: absolute;
+    right: 61px;
+    top: 12px;*/
+    list-style: none;
+    margin-right: 10px;
+}
+
+.facebook {
+    width: 7%;
+    /*position: absolute;
+    right: 84px;
+    top: 12px;*/
+    list-style: none;
+    margin-right: 10px;
+}
+}
+
+@media screen and (min-width: 769px) {
 nav {
     background: #69290c;
     position: sticky;
@@ -51,7 +131,8 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    width: 85%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -83,16 +164,116 @@ nav ul li a {
     width: 100%;
     display: block;
 }
+}
 
+@media screen and (max-width: 768px) {
+    
+nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    padding-top: 50px;
+    background: rgba(33,33,33,.9);
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 2
+}
+
+nav ul li {
+    padding: 20px 28px
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ddd
+}
+
+
+.btn-gnavi {
+    background: white;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    z-index: 3;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+}
+
+.btn-gnavi span {
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background: #666;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+}
+
+.btn-gnavi span:nth-child(1) {
+    top: 11px;
+    left: 5px;
+}
+
+.btn-gnavi span:nth-child(2) {
+    top: 21px;
+    left: 5px;
+}
+
+.btn-gnavi span:nth-child(3) {
+    top: 31px;
+    left: 5px;
+}
+
+.btn-gnavi.open {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.btn-gnavi.open span {
+    background: background: #666;;
+}
+
+.btn-gnavi.open span:nth-child(1) {
+    width: 24px;
+    -webkit-transform: translate(-5px,17px) rotate(45deg);
+    transform: translate(-5px,17px) rotate(45deg)
+}
+
+.btn-gnavi.open span:nth-child(2) {
+    width: 37px;
+    -webkit-transform: translate(0px,0px) rotate(0deg);
+    transform: translate(0px,0px) rotate(0deg)
+}    
+    
+.btn-gnavi.open span:nth-child(3) {
+    width: 24px;
+    -webkit-transform: translate(-5px,-17px) rotate(-45deg);
+    transform: translate(-5px,-17px) rotate(-45deg)
+}
+
+}
 .topimg {
     width: 100%;
     height: auto;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .newsSection {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+.newsSection {
+    width: 80%;
+    margin: 0 auto;
+}
 }
 
 .news {
@@ -103,24 +284,57 @@ nav ul li a {
     font-weight: lighter;
 }
 
+@media screen and (max-width: 768px) {
+.news {
+    font-size: 40px;
+}
+}
+
 .newsoutcontents {
     display: flex;
     flex-wrap: wrap;
+}
 
+@media screen and (max-width: 768px) {
+.newsoutcontents {
+    display: block;
+}
 }
 
 .newsoutcontents dt {
     width: 25%;
     border-bottom: solid 1px #080808;
     box-sizing: border-box;
-    padding: 14px 0px 6px 200px;
+    padding: 14px 0px 6px 75px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+.newsoutcontents dt {
+    width: 100%;
+    border-bottom: none;
+    box-sizing: border-box;
+    padding: 14px 0px 0px 0px;
+    margin-bottom: 0;
+}
 }
 
 .newsoutcontents dd {
     width: 75%;
     border-bottom: solid 1px #080808;
     box-sizing: border-box;
-    padding: 14px 0px 6px 130px;
+    padding: 14px 0px 6px 40px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+.newsoutcontents dd {
+    width: 100%;
+    border-bottom: solid 1px #080808;
+    box-sizing: border-box;
+    padding: 8px 0px 6px 0px;
+    margin-bottom: 13px;
+}
 }
 
 .newsoutcontents a:link {
@@ -140,33 +354,84 @@ nav ul li a {
 
 .aboutsection {
     margin: 0 auto;
-    width: 1200px;
+    width: 1000px;
+
+}
+
+@media screen and (max-width: 768px) {
+.aboutsection {
+    margin: 0 auto;
+    width: 80%;
+}
 }
 
 .inner_about {
     overflow: hidden;
     margin-bottom: 40px;
+
 }
+
 
 .aboutsection figure {
     float: left;
 }
 
-.about_catch {
+@media screen and (max-width: 768px) {
+.aboutsection figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+}
+
+.about_text {
     float: right;
-    width: 600px;
+    width: 450px;
+}
+
+@media screen and (max-width: 768px) {
+.about_text {
+    width: 100%;
+}
+}
+
+.about_catch { 
     margin: 1.2em 0 1.2em;
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
     color: #69290c;
     font-family: serif;
     font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+.about_catch { 
+    font-size: 20px;
+}
+}
+
 .aboutp {
-    float: right;
-    width: 500px;
     line-height: 2;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+.aboutp {
+    line-height: 2;
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.inner_about {
+
+}
+    
+.aboutsection figure {
+    float: none;
+    text-align: center;
+}
+
 }
 
 .about {
@@ -177,6 +442,12 @@ nav ul li a {
     font-weight: lighter;
 }
 
+@media screen and (max-width: 768px) {
+.about {
+    font-size: 40px;
+}
+}
+
 .botan {
     text-align: center;
     width: 200px;
@@ -184,9 +455,18 @@ nav ul li a {
     line-height: 50px;
     padding: 2px;
     background: #69290c;
-    margin-left: 600px;
+    margin-left: 512px;
     transform: translateX(-50%);
     color: #f7f7f7;
+}
+
+
+@media screen and (max-width: 768px) {
+.botan {
+    width: 200px;
+    margin: 0 auto;
+    transform: translateX(0%)
+}
 }
 
 .botan a:link {
@@ -220,9 +500,17 @@ nav ul li a {
     line-height: 50px;
     padding: 2px;
     background: #69290c;
-    margin-left: 600px;
+    margin-left: 512px;
     transform: translateX(-50%);
     color: #f7f7f7;
+}
+
+@media screen and (max-width: 768px) {
+.botan2 {
+    width: 200px;
+    margin: 0 auto;
+    transform: translateX(0%)
+}
 }
 
 .botan2 a:link {
@@ -257,9 +545,17 @@ nav ul li a {
 
 .eventinsection {
     margin: 0 auto;
-    width: 1200px;
+    width: 1000px;
     margin-top: 60px;
     padding-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+.eventinsection {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 60px;
+}
 }
 
 .event {
@@ -268,6 +564,12 @@ nav ul li a {
     font-size: 60px;
     font-family: 'Noto Serif JP', serif;
     font-weight: lighter;
+}
+
+@media screen and (max-width: 768px) {
+.event {
+    font-size: 40px;
+}
 }
 
 .rinyu-aru {
@@ -279,16 +581,34 @@ nav ul li a {
     margin: 0px auto 40px;
 }
 
+@media screen and (max-width: 768px) {
+.rinyu-aru {
+    width: 60%;
+    font-size: 15px;
+}
+}
+
+.eventfigure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .eventp {
     margin: 40px 0px;
 }
 
 .menuoutsection {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
 }
 
-
+@media screen and (max-width: 768px) {
+.menuoutsection {
+    margin: 0 auto;
+    width: 80%;
+}
+}
 
 .menu {
     text-align: center;
@@ -298,22 +618,45 @@ nav ul li a {
     font-weight: lighter;
 }
 
+@media screen and (max-width: 768px) {
+.menu {
+    font-size: 40px;
+}
+}
+
 .menuoutimg {
     list-style: none;
     display: flex;
     justify-content:space-between;
+    flex-wrap: wrap;
 }
 
-.menuimg1 {
-
+.menuoutimg li {
+    width: 30%;
+    margin-bottom: 25px;
 }
 
-.menuimg2 {
+.menuoutimg li img {
+    display: block;
+    width: 100%;
+    height: auto;
+}  
 
+@media screen and (max-width: 768px) {
+.menuoutimg li {
+    width: 45%;
+    margin-bottom: 25px;
+}
+
+.menuoutimg li img {
+    display: block;
+    width: 100%;
+    height: auto;
+}  
 }
 
 .menup {
-    margin: 40px 0px;
+    margin: 15px 0px 40px;
 }
 
 .infooutsection {
@@ -322,10 +665,18 @@ nav ul li a {
 
 .infoinsection {
     margin: 0 auto;
-    width: 1200px;
+    width: 1000px;
     margin-top: 60px;
     padding-bottom: 40px;
     position: relative;
+}
+
+@media screen and (max-width: 768px) {
+.infoinsection {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 60px;
+}
 }
 
 .info {
@@ -336,9 +687,22 @@ nav ul li a {
     font-weight: lighter;
 }
 
+@media screen and (max-width: 768px) {
+.info {
+    font-size: 40px;
+}
+}
+
+
 .infodl {
     display: flex;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+.infodl dt {
+    display: none;
+}      
 }
 
 .infoimg {
@@ -350,6 +714,12 @@ nav ul li a {
     word-wrap: break-word;
 }
 
+@media screen and (max-width: 768px) {
+.infodl dd {
+    width: 100%;
+} 
+}
+    
 .botan3 {
     text-align: center;
     width: 200px;
@@ -360,7 +730,15 @@ nav ul li a {
     color: #f7f7f7;
     position: absolute;
     top: 373px;
-    left: 764px;
+    left: 614px;
+}
+
+@media screen and (max-width: 768px) {
+ .botan3 {
+     width: 200px;
+     margin: 40px auto;
+     position: static;
+}
 }
 
 .botan3 a:link {
@@ -394,7 +772,11 @@ footer {
 footer p {
     text-align: center;
     color: #f7f7f7;
-    padding: 20px 0px;
-    width: 1200px;
-    margin: 0 auto;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+footer p {
+    font-size: 14px;
+}
 }
