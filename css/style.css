@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -143,6 +143,7 @@ nav ul li {
     height: 40px;
     line-height: 40px;
     font-family: 'Noto Serif JP', serif;
+    font-size: 18px;
 }
 
 nav ul li a:link {
@@ -265,8 +266,9 @@ nav ul li a {
 }
 
 .newsSection {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
+    width: 80%;
 }
 
 @media screen and (max-width: 768px) {
@@ -353,8 +355,9 @@ nav ul li a {
 }
 
 .aboutsection {
+    max-width: 1000px;
     margin: 0 auto;
-    width: 1000px;
+    width: 80%;
 
 }
 
@@ -386,7 +389,8 @@ nav ul li a {
 
 .about_text {
     float: right;
-    width: 450px;
+    width: 320px;
+    margin-left: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -398,7 +402,7 @@ nav ul li a {
 .about_catch { 
     margin: 1.2em 0 1.2em;
     text-align: center;
-    font-size: 22px;
+    font-size: 19px;
     color: #69290c;
     font-family: serif;
     font-weight: bold;
@@ -412,7 +416,7 @@ nav ul li a {
 
 .aboutp {
     line-height: 2;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 768px) {
@@ -455,9 +459,7 @@ nav ul li a {
     line-height: 50px;
     padding: 2px;
     background: #69290c;
-    margin-left: 512px;
-    transform: translateX(-50%);
-    color: #f7f7f7;
+    margin: 0 auto;
 }
 
 
@@ -500,9 +502,7 @@ nav ul li a {
     line-height: 50px;
     padding: 2px;
     background: #69290c;
-    margin-left: 512px;
-    transform: translateX(-50%);
-    color: #f7f7f7;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -544,8 +544,9 @@ nav ul li a {
 }
 
 .eventinsection {
+    max-width: 1000px;
     margin: 0 auto;
-    width: 1000px;
+    width: 80%;
     margin-top: 60px;
     padding-bottom: 60px;
 }
@@ -596,11 +597,13 @@ nav ul li a {
 
 .eventp {
     margin: 40px 0px;
+    line-height: 2;
 }
 
 .menuoutsection {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
+    width: 80%;
 }
 
 @media screen and (max-width: 768px) {
@@ -657,6 +660,7 @@ nav ul li a {
 
 .menup {
     margin: 15px 0px 40px;
+    line-height: 2;
 }
 
 .infooutsection {
@@ -664,8 +668,9 @@ nav ul li a {
 }
 
 .infoinsection {
+    max-width: 1000px;
     margin: 0 auto;
-    width: 1000px;
+    width: 80%;
     margin-top: 60px;
     padding-bottom: 40px;
     position: relative;
@@ -696,7 +701,7 @@ nav ul li a {
 
 .infodl {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
@@ -712,6 +717,7 @@ nav ul li a {
 .infotext {
     width: 272px;
     word-wrap: break-word;
+    line-height: 2;
 }
 
 @media screen and (max-width: 768px) {
@@ -730,7 +736,7 @@ nav ul li a {
     color: #f7f7f7;
     position: absolute;
     top: 373px;
-    left: 614px;
+    right: 68px;
 }
 
 @media screen and (max-width: 768px) {
